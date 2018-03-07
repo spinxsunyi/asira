@@ -1,0 +1,14 @@
+{
+  "name": "ekabot",
+  "version": "1.0.0",
+  "description": "\"eka's virtual assistant bot, 2nd bot\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"eka yudhi pratama\"",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^3.19.0"
+  }
+}
