@@ -4,9 +4,8 @@ const Markup = require('telegraf/markup');
 
 var janji=0;var pesan=0;
 
-//const app = new Telegraf('568826477:AAEubq_J8EKl4in5vW1YNDlrvZfULYMtiWM'); //sismod
-//const app = new Telegraf('521458898:AAHa72gg-sC-PX_bUAMCtsQAx82A5g1FJbA'); //sidea
-const app = new Telegraf('550237780:AAFPcgAjtgFGfr0w9cV0QHWbG0KBPa_KD0Y'); //eka
+
+const app = new Telegraf('deleted'); //eka
 
 app.start((ctx) => {
   console.log('started:', ctx.from.first_name);
