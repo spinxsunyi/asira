@@ -58,6 +58,7 @@ app.on('text', ctx => {
         janji =2;
         return ctx.reply("Jam berapa?")
     }else if (janji==2){
+        janji =0;
         return ctx.reply("Oke, jadwal sudah Asira simpan. Tunggu kabar berikutnya!")
     }else if (pesan ==1) {
         ctx.reply("oke.. ada lagi pesan yang lain? Kalau cukup bilang 'ok' ya, tuan"+nama);
@@ -65,7 +66,7 @@ app.on('text', ctx => {
         return ctx.message.text;
     }
     else{
-        ctx.reply("hmm.. Maafkan Asira kurang paham... Itu tidak ada di databse Asira.. Silahkan cek /help untuk daftar perintah.. :)");
+        ctx.reply("hmm.. Maafkan Asira kurang paham... Itu tidak ada di databse Asira.. :( maklum Asira baru lahir... Silahkan cek /help untuk daftar perintah.. :)");
         console.log(ctx.message.text);
         return ctx.message.text;
     }
@@ -84,7 +85,6 @@ console.log(ctx.callbackQuery);
 	case 'agenda': ctx.reply("Agenda tuan Eka minggu ini: Kamis malam ada penelitian chemcar, Jumat-Minggu ke Bekasi. ~kyaa,, minggu yang padat");break;
 	default: ctx.reply("hmm..");
 }
-
 
   return ctx.answerCbQuery();
 })
